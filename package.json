@@ -1,0 +1,39 @@
+{
+  "name": "connectwise-manage-rest-api",
+  "version": "1.2.0",
+  "description": "A lightweight interface that preserves the syntax but removes as much boiler plate code as possible for using the ConnectWise REST API's.",
+  "author": "Richard Janicek <r@janicek.co> (http://www.janicek.co)",
+  "license": "MIT",
+  "homepage": "https://github.com/rjanicek/connectwise-manage-rest-api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rjanicek/connectwise-manage-rest-api"
+  },
+  "main": "index.js",
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 8
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": "off",
+      "strict": "error",
+      "semi": "error",
+      "indent": "error"
+    },
+    "globals": {
+      "Promise": true
+    }
+  },
+  "dependencies": {
+    "fast-json-patch": "2.0.7",
+    "fetch-ponyfill": "6.0.2",
+    "lodash": "4.17.11"
+  },
+  "scripts": {
+    "test": "node test"
+  }
+}
